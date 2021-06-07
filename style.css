@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(221, 218, 218);
+
+}
+#icon{
+    position: absolute;
+    left: 46%;
+    height: 10%;
+    filter: invert(100%);
+}
+
+/* login PAge */
+#login-page{
+    height: 14rem;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    /* display: none; */
+}
+h2{
+    text-align: center;
+}
+form{
+
+    height: 7rem;
+    padding: 20px 20px;
+    margin: 10px;
+}
+
+input{
+    background: rgb(216, 206, 206);
+    border: 0;
+    position: relative;
+    width: 47%;
+    height: 25%;
+    border-radius: 23px;
+    outline: 0;
+    font-size: 15px;
+    text-align: center;
+
+}
+#go{
+    position: relative;
+    padding: 10px 20px;
+    top: 18px;
+    left: 169px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* main Page */
+#second{
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+#greet{
+    position: absolute;
+    left: 4%;
+    top: 3%;
+}
+#credentials{
+    position: absolute;
+    right: 4%;
+    top: 3%;
+    float: right;
+    width: 363px;
+    height: 20%;
+}
+#username{
+    border-radius: 23px;
+    position: absolute;
+    background: rgb(209, 205, 205);
+    width: 110px;
+    text-align: center;
+    font-size: 18px;
+    height: 30px;
+    padding-top: 4px;
+    right: 238px;
+    top: 8px;
+
+}
+#pin{
+    left: 138px;
+    border-radius: 23px;
+    position: absolute;
+    background: rgb(216, 206, 206);
+    width: 76px;
+    text-align: center;
+    font-size: 18px;
+    height: 30px;
+    padding-top: 4px;
+    top: 8px;
+
+}
+#switch{
+    position: absolute;
+    right: 68px;
+    top: 7px;
+    border: 0;
+    font-weight: bold;
+    outline: 0;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+#current{
+    height: 76px;
+    position: relative;
+    top: 4rem;
+
+}
+#current-heading{
+    height: 70px;
+    width: 15%;
+    position: absolute;
+    left: 16%;
+    text-align: center;
+
+}
+#current-heading h3{
+    font-size: 25px;
+}
+
+#balance{
+    position: absolute;
+    width: 14%;
+    text-align: center;
+    right: 221px;
+    height: 60px;
+    font-size: 28px;
+}
+#content{
+    height: 35rem;
+    position: relative;
+    top: 65px;
+
+}
+#transactions{
+    position: absolute;
+    width: 35%;
+    left: 15%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    scrollbar-base-color: whitesmoke;
+    /* scroll-behavior: smooth; */
+    overflow-x: hidden;
+    scrollbar-width: none;
+
+}
+.info{
+    /* position: absolute; */
+    width: 80%;
+    height: 64px;
+    /* background: rgb(224, 218, 218); */
+    box-shadow: -7px 7px 10px -6px rgba(0,0,0,0.4);
+    margin: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
+.trans{
+    /* position: absolute; */
+    padding: 5px 10px;
+    width: 126px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: rgb(26, 87, 11);
+
+}
+.amt{
+    /* position: absolute; */
+    width: 126px;
+    height: 50px;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#options{
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    right: 71px;
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 20px; */
+    justify-content: space-evenly;
+
+}
+.opt{
+    height: 131px;
+    border-radius: 20px;
+}
+#option-1{
+    background: rgb(224, 185, 11);
+}
+.samebtn{
+    position: absolute;
+    padding: 5px 15px;
+    border-radius: 23px;
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    top: 105px;
+    right: 200px;
+}
+#option-2{
+    background: rgb(93, 214, 12);
+}
+#option-2 button{
+    top: 214px;
+    right: 150px;
+}
+#option-3{
+    color: white;
+    background: rgb(206, 20, 20);
+}
+#option-3 button{
+    top: 397px;
+    right: 200px;
+}
+
+#transaction-info{
+    width: 35%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.box{
+    width: 100px;
+    height: 43px;
+}
+
+#deposit{
+    width: 72px;
+    font-size: 15px;
+    position: absolute;
+    top: 55px;
+    left: 21px;
+    font-weight: bold;
+    color: green;
+    font-size: 18px;
+
+}
+#withdraw{
+    width: 72px;
+    font-size: 15px;
+    position: absolute;
+    top: 55px;
+    left: 122px;
+    font-weight: bold;
+    color: rgb(236, 78, 30);
+    font-size: 18px;
+
+}
+#interest{
+    width: 72px;
+    font-size: 15px;
+    position: absolute;
+    top: 55px;
+    left: 227px;
+    font-weight: bold;
+    color: green;
+    font-size: 18px;
+
+}
+#sort{
+    width: 100px;
+    height: 43px;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+
+}

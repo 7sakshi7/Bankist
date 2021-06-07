@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="./icon.png" alt="" id="icon">
+    <div id="login-page">
+        <h2>Login to get started!!!</h2>
+        <form action="" id="login-form">
+            <input type="text"  id="user" placeholder="User">
+            <input type="number"  id="userpin" placeholder="Pin">
+            <button id="go">Go!</button> 
+        </form>
+    </div>
+    <div id="second">
+
+        <div id="main-page">
+            <!-- top -->
+        <h2 id="greet"></h2>
+        <div id="credentials">
+            <form action="" id="login-form">
+                <input type="text"  id="username" placeholder="User">
+                <input type="number"  id="pin" placeholder="Pin">
+                <button id="switch">---></button> 
+            </form>
+            <!-- <div id="username">sdbvl</div>
+            <div id="pin">8956</div> -->
+        </div>
+        <!-- current balance -->
+        <div id="current">
+            <div id="current-heading">
+                <h3>Current Balance</h3>
+                <h4></h4>
+                
+            </div>
+            <div id="balance"></div>
+        </div>
+    </div>
+    <div id="content">
+        <div id="transactions">
+            <div class="info" style="display: none;">
+                <button class="trans"></button>
+                <h3></h3>
+                <div class="amt"></div>
+            </div>
+        </div>
+        <div id="options">
+            <div id="option-1" class="opt">
+                <h2>Transfer Money</h2>
+                <form action="">
+                    <input type="text" name="user" id="tr-user" placeholder="Transfer To">
+                    <input type="number" name="amt" id="tr-amt" placeholder="Amount">
+                    <button class="samebtn" id="transfer-btn">Done</button>
+                </form>
+            </div>
+            <div id="option-2" class="opt">
+                <h2>Deposit</h2>
+                <form action="">
+                    <input type="number" name="amt" placeholder="Amount">
+                    <button class="samebtn" id="deposit-btn">Done</button>
+                </form>
+
+            </div>
+            <div id="option-3" class="opt">
+                <h2>Close Account</h2>
+                <form action="">
+                    <input type="text" name="user" placeholder="Confirm User">
+                    <input type="number" name="amt" placeholder="Confirm Pin">
+                    <button class="samebtn" id="close">Done</button>
+                </form>
+            </div>
+        </div>
+        <div id="transaction-info">
+            <div class="box" id="box-1">
+                <h2>In</h2>
+                <div id="deposit"></div>
+            </div>
+            <div class="box" id="box-2">
+                <h2>Out</h2>
+                <div id="withdraw"></div>
+            </div>
+            <div class="box" id="box-3">
+                <h2>Interest</h2>
+                <div id="interest"></div>
+            </div>
+            <div id="sort">
+                <!-- <button style="padding: 5px 15px;" id="inc">Sort Increasing</button> -->
+                <button style="padding: 5px 15px;" id="sort_value">Sort</button>
+           </div>
+        </div>
+    </div>
+</div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
